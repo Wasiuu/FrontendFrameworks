@@ -1,5 +1,12 @@
 {
-  "/Calendar/page": "app/Calendar/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/_not-found/page": "app/_not-found/page.js",
   "/Home/page": "app/Home/page.js",
-  "/user/profile/page": "app/user/profile/page.js"
+  "/Calendar/page": "app/Calendar/page.js",
+  "/articles/page": "app/articles/page.js",
+  "/page": "app/page.js",
+  "/user/profile/page": "app/user/profile/page.js",
+  "/user/signin/page": "app/user/signin/page.js",
+  "/user/register/page": "app/user/register/page.js",
+  "/user/verify/page": "app/user/verify/page.js"
 }
