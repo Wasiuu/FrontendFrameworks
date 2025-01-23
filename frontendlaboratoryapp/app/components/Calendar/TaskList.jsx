@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 export default function TaskList({ tasks, selectedDate, onEdit, onDelete }) {
     console.log('Dane tasks w TaskList:', tasks);
     const dateKey = selectedDate.toDateString();
-    const tasksForDate = tasks[dateKey] || []; // Ensure we have an empty array if no tasks exist for the date
+    const tasksForDate = tasks[dateKey] || [];
     console.log('Zadania dla daty w TaskList:', tasksForDate);
 
     return (

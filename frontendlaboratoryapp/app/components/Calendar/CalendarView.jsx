@@ -24,9 +24,9 @@ export default function CalendarView() {
 
             const fetched = await fetchTasksForDate(selectedDate, user.uid);
 
-            // Grupowanie zadań według dat
+
             const groupedTasks = fetched.reduce((acc, task) => {
-                const dateKey = task.date; // Użyj daty jako klucza
+                const dateKey = task.date;
                 if (!acc[dateKey]) {
                     acc[dateKey] = [];
                 }

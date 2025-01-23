@@ -18,15 +18,13 @@ export default function SignInForm() {
             const userCredential = await signInWithEmailAndPassword(auth, email, password);
             const user = userCredential.user;
 
-            // Sprawdzenie, czy adres email jest zweryfikowany
             if (!user.emailVerified) {
                 setError("Twój adres email nie został zweryfikowany. Sprawdź swoją skrzynkę pocztową.");
-                await auth.signOut(); // Automatyczne wylogowanie
+                await auth.signOut();
                 router.push("/user/verify");
                 return;
             }
 
-            // Jeśli email jest zweryfikowany, przekieruj na stronę główną
             router.push("/user/profile");
         } catch (error) {
             console.error("Błąd logowania:", error.code, error.message);

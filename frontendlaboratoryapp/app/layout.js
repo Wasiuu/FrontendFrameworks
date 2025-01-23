@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react"; // Import useState
+import { useState } from "react";
 import { AuthProvider } from "@/app/lib/AuthContext";
 import PropTypes from "prop-types";
 import localFont from "next/font/local";
@@ -20,7 +20,7 @@ const geistMono = localFont({
 });
 
 export default function RootLayout({ children }) {
-  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false); // State dla menu
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <html lang="en">
@@ -112,7 +112,12 @@ export default function RootLayout({ children }) {
 
             {/* Footer */}
             <footer className="bg-gray-800 text-white text-center py-4">
-              &copy; 2024 Your App. All rights reserved.
+              &copy; 2024 Calendar App. All rights reserved.
+              <a href="https://github.com/Wasiuu">
+                <br></br>
+                <br></br>
+                GitHub: Wasiuu
+              </a>
             </footer>
           </div>
         </AuthProvider>

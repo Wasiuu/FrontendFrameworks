@@ -18,14 +18,11 @@ export default function RegisterForm() {
             const userCredential = await createUserWithEmailAndPassword(auth, email, password);
             const user = userCredential.user;
 
-            // Wysyłanie emaila weryfikacyjnego
             await sendEmailVerification(user);
             console.log("Email weryfikacyjny został wysłany!");
 
-            // Automatyczne wylogowanie
             await signOut(auth);
 
-            // Przekierowanie do strony weryfikacji
             router.push("/user/verify");
         } catch (error) {
             console.error("Błąd rejestracji:", error.code, error.message);

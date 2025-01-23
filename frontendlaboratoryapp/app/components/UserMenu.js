@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function UserMenu() {
     const [currentUser, setCurrentUser] = useState(null);
 
-    // Monitorowanie stanu zalogowanego użytkownika
+
     useEffect(() => {
         const unsubscribe = auth.onAuthStateChanged((user) => {
             setCurrentUser(user);
@@ -28,11 +28,11 @@ export default function UserMenu() {
                     <span className="font-bold">{currentUser.displayName || "User"}</span>
                     {currentUser.photoURL && (
                         <Image
-                            src={currentUser.photoURL || "/default-profile.png"} // Use currentUser instead of user
+                            src={currentUser.photoURL || "/default-profile.png"}
                             alt="Zdjęcie profilowe"
                             className="rounded-full object-cover"
-                            width={96} // Width in pixels (required)
-                            height={96} // Height in pixels (required)
+                            width={96}
+                            height={96}
                         />
                     )}
                     <button

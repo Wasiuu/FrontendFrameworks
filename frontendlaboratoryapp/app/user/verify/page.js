@@ -6,7 +6,6 @@ import { auth } from "@/app/lib/firebase/firebase";
 export default function VerifyEmail() {
     const user = auth.currentUser;
 
-    // Automatyczne wylogowanie po wejściu na stronę
     if (user) {
         signOut(auth);
     }
