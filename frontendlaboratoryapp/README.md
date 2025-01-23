@@ -62,8 +62,8 @@
     ## Wykonał: Jakub Wasylik nr.albumu 14762
     ## Link do repozytorium oraz do wersji live aplikacji:
 
-    ## github.com/Wasiuu/FrontendFrameworks
-    ## https://frontendapp-1c63a.web.app
+   github.com/Wasiuu/FrontendFrameworks
+   https://frontendapp-1c63a.web.app
 
 
     
